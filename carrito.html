@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito Orbita</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/Diseño-sin-título.ico" sizes="32x32" type="image/png">
+<link rel="icon" href="img/Diseño-sin-título.ico" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="img/Diseño-sin-título.ico">
+</head>
+<body class="carrito-page">
+
+  <header class="navbar">
+    <div class="logo-text"><a href="index.html">Orbita</a></div>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="guias.html">Guías</a>
+          <ul class="dropdown-menu">
+            <li><a href="guias.html#categoria1"> Proposito</a></li>
+            <li><a href="guias.html#categoria2"> Creatividad</a></li>
+            <li><a href="guias.html#categoria3"> Bienestar</a></li>
+            <li><a href="guias.html#categoria4"> Finanzas</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="sobrentros.html">Sobre nosotros</a>
+          <ul class="dropdown-menu">
+            <li><a href="#vision"> Vision</a></li>
+            <li><a href="#metricas"> Metricas</a></li>
+            <li><a href="#valores"> Valores</a></li>
+            <li><a href="#reconocimiento"> Reconocimiento</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="modelo.html">Modelo</a></li>
+        <li class="carrito-icon">
+          <a href="carrito.html">
+            🛒
+          </a>
+        </li>
+      </ul>
+    </nav>
+</header>
+
+    <h1>Tu carrito de Orbita</h1>
+
+    <div class="carrito">
+      <h2>Guías seleccionadas</h2>
+      <ul id="lista"></ul>
+      <p>Total: $<span id="suma">0</span></p>
+      <button class="boton" onclick="comprar()">Finalizar compra</button>
+    </div>
+    <script src="java.js"></script>
+    <script>
+      // Mostrar carrito al cargar la página
+      mostrarCarrito();
+    </script>
+
+  </body>
+</html>
